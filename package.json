@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://farid141.github.io/farid141.github.io",
+  "homepage": "https://farid141.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
