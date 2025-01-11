@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useRef, useState } from 'react';
+import { Navbar } from './Layout/Navbar';
+import { Hero } from './components/Hero';
+import { Experience } from './components/Experience';
+import { Projects } from './components/Projects';
+import { Skills } from './components/Skills';
+import { Education } from './components/Education';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [activeSection, setActiveSection] = useState('hero');
+
+  useEffect(() => {
+    const sectionRefs = {
+      hero: document.getElementById('hero'),
+      experience: document.getElementById('experience'),
+      projects: document.getElementById('projects'),
+      skills: document.getElementById('skills'),
+      education: document.getElementById('education'),
+    };
+
+    const observerOptions = {
+      threshold: 0.3,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    Object.values(sectionRefs).forEach((ref) => {
+      if (ref) {
+        observer.observe(ref);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="min-h-screen bg-gray-900 text-gray-100">
+      <Navbar activeSection={activeSection} />
+      <Hero />
+      <Experience />
+      <Projects />
+      <Skills />
+      <Education />
+    </div>
+  );
+};
 
-export default App
+export default App;
