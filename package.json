@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://farid141.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,6 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://farid141.github.io/",
   "dependencies": {
     "lucide-react": "^0.471.0",
     "react": "^18.3.1",
