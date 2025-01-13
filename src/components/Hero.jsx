@@ -1,5 +1,6 @@
 import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
+import photo_profile from "../assets/photo_profile.png";
 
 export const Hero = () => {
   return (
@@ -9,6 +10,13 @@ export const Hero = () => {
     >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-800 justify-self-center rounded-full">
+            <img
+              src={photo_profile}
+              alt=""
+              className="items-center rounded-full"
+            />
+          </div>
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
             Farid Nubaili
           </h1>

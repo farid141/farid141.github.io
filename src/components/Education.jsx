@@ -17,7 +17,7 @@ const educations = [
 ];
 export const Education = () => {
   return (
-    <section id="education" className="py-20 bg-gray-800">
+    <section id="education" className="py-20 bg-gray-800 min-h-screen">
       <div className="container mx-auto px-4 space-y-8">
         <SectionTitle>Educations</SectionTitle>
         {educations.map((education) => (
