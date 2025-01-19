@@ -2,7 +2,7 @@ import React from "react";
 import { ExternalLink } from "lucide-react";
 import { SectionTitle } from "./common/SectionTitle";
 import { Tag } from "./common/Tag";
-import { YouTubeEmbed } from "./common/YouTubeEmbed";
+import { YouTubeEmbed } from "./common/YoutubeEmbed";
 
 export const Projects = () => {
   const projects = [
