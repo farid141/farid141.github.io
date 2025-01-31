@@ -7,6 +7,14 @@ import { YouTubeEmbed } from "./common/YoutubeEmbed";
 export const Projects = () => {
   const projects = [
     {
+      title: "Laravel product transaction API with queued email notification",
+      description:
+        "API for product transaction application. The created transaction will adjust product stock accordingly and process send email in queue background",
+      tech: "Laravel",
+      link: "",
+      videoId: "Z0hPXZZcNyk",
+    },
+    {
       title: "Laravel Todo App",
       description:
         "Advanced Todo application showcasing Laravel ORM relationships with modern front-end stack.",
