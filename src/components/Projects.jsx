@@ -62,6 +62,14 @@ export const Projects = () => {
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
       videoId: "UtObGMDVDgQ",
     },
+    {
+      title: "Jobstreet Scrapper",
+      description:
+        "Scrape all jobs posted on jobstreet. Creating CSV file that consist of company name, region, description, keywords to make job scanning easiter.",
+      tech: "Python, selenium, pandas",
+      link: "https://github.com/farid141/jobstreet-scrapper",
+      videoId: "q32RDOZiAWk",
+    },
   ];
 
   return (
