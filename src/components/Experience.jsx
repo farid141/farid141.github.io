@@ -3,6 +3,7 @@ import { Calendar } from "lucide-react";
 import { SectionTitle } from "./common/SectionTitle";
 import { Tag } from "./common/Tag";
 
+import iotera_logo from "../assets/iotera_logo.png";
 import pilarmedia_logo from "../assets/pilarmedia_logo.jpeg";
 import behaestex_logo from "../assets/behaestex_logo.jpeg";
 import dentech_logo from "../assets/dentech_logo.jpeg";
@@ -11,6 +12,21 @@ import vktr_logo from "../assets/vktr_logo.jpeg";
 import telpro_logo from "../assets/telpro_logo.jpeg";
 
 const experiences = [
+  {
+    company: "PT Iotera Sinergi Digital",
+    role: "Full Stack Developer",
+    date: "Feb 2025 – present",
+    description: "",
+    bulletPoints: [
+      "Participated in BSI (Bank Syariah Indonesia) Smart Vault project as a Fullstack Developer.",
+      "Sliced 10+ figma UI design into web pages and its reactivity using ReactJS, TypeScript and ANTDesign.",
+      "Wrapped web-based React app into desktop-based app using Electron JS.",
+      "Developed REST API using FastAPI with repository-pattern and SQLModel as ORM and data validation.",
+      "Implemented data caching strategy using Redis to minimize database call and increase performance.",
+    ],
+    tech: "Python, FastAPI, Redis, Javascript, Electron, React, ANT Design, Typescript, Oracle, SQLite",
+    image: iotera_logo,
+  },
   {
     company: "CV Pilarmedia Indonesia (Software House)",
     role: "Full Stack Developer",
