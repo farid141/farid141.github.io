@@ -12,13 +12,6 @@ export const Projects = () => {
         "API for product transaction application. The created transaction will adjust product stock accordingly and process send email in queue background",
       tech: "Laravel",
       link: "",
-    },
-    {
-      title: "Laravel product transaction API with queued email notification",
-      description:
-        "API for product transaction application. The created transaction will adjust product stock accordingly and process send email in queue background",
-      tech: "Laravel",
-      link: "",
       videoId: "Z0hPXZZcNyk",
     },
     {
