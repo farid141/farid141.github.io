@@ -7,24 +7,14 @@ export const Skills = () => {
     "Programming Languages": [
       "C",
       "C++",
-      "C#",
-      "Go",
       "Python",
       "PHP",
       "SQL",
       "JavaScript",
       "Typescript",
     ],
-    "Frameworks & Libraries": [
-      "Laravel",
-      "Bootstrap",
-      "Tailwind",
-      "ANT Design",
-      "jQuery",
-      "React",
-      "Vue",
-      "AngularJS",
-    ],
+    Backend: ["Laravel", "CI", "FastAPI"],
+    FrontEnd: ["Bootstrap", "Tailwind", "jQuery", "Inertia", "ReactJS", "VueJS", "AngularJS"],
     Tools: [
       "VSCode",
       "Visual Studio",
@@ -32,11 +22,13 @@ export const Skills = () => {
       "Docker",
       "DBeaver",
       "Postman",
+    ],
+    IoT: [
       "Arduino IDE",
       "STM32Cube IDE",
       "Eagle",
     ],
-    Databases: ["MySQL", "PostgreSQL", "Oracle", "SQLite", "MongoDB"],
+    Databases: ["MySQL", "PostgreSQL", "Oracle", "SQLite", "MongoDB", "Redis"],
   };
 
   return (
