@@ -1,6 +1,6 @@
 import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
-import photo_profile from "../assets/photo_profile.png";
+import photo_profile from "../assets/photo_profile.webp";
 
 export const Hero = () => {
   return (

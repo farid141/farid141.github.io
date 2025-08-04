@@ -3,13 +3,13 @@ import { Calendar } from "lucide-react";
 import { SectionTitle } from "./common/SectionTitle";
 import { Tag } from "./common/Tag";
 
-import iotera_logo from "../assets/iotera_logo.png";
-import pilarmedia_logo from "../assets/pilarmedia_logo.jpeg";
-import behaestex_logo from "../assets/behaestex_logo.jpeg";
-import dentech_logo from "../assets/dentech_logo.jpeg";
-import clown_logo from "../assets/clown_logo.jpeg";
-import vktr_logo from "../assets/vktr_logo.jpeg";
-import telpro_logo from "../assets/telpro_logo.jpeg";
+import iotera_logo from "../assets/iotera_logo.webp";
+import pilarmedia_logo from "../assets/pilarmedia_logo.webp";
+import behaestex_logo from "../assets/behaestex_logo.webp";
+import dentech_logo from "../assets/dentech_logo.webp";
+import clown_logo from "../assets/clown_logo.webp";
+import vktr_logo from "../assets/vktr_logo.webp";
+import telpro_logo from "../assets/telpro_logo.webp";
 
 const experiences = [
   {
