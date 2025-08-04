@@ -14,20 +14,17 @@ export const Skills = () => {
       "Typescript",
     ],
     Backend: ["Laravel", "CI", "FastAPI"],
-    FrontEnd: ["Bootstrap", "Tailwind", "jQuery", "Inertia", "ReactJS", "VueJS", "AngularJS"],
-    Tools: [
-      "VSCode",
-      "Visual Studio",
-      "Git",
-      "Docker",
-      "DBeaver",
-      "Postman",
+    FrontEnd: [
+      "Bootstrap",
+      "Tailwind",
+      "jQuery",
+      "Inertia",
+      "ReactJS",
+      "VueJS",
+      "AngularJS",
     ],
-    IoT: [
-      "Arduino IDE",
-      "STM32Cube IDE",
-      "Eagle",
-    ],
+    Tools: ["VSCode", "Visual Studio", "Git", "Docker", "DBeaver", "Postman"],
+    IoT: ["Arduino IDE", "STM32Cube IDE", "Eagle"],
     Databases: ["MySQL", "PostgreSQL", "Oracle", "SQLite", "MongoDB", "Redis"],
   };
 
@@ -36,10 +33,12 @@ export const Skills = () => {
       <div className="container mx-auto px-4">
         <SectionTitle>Skills</SectionTitle>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          {Object.entries(skillCategories).map(([category, skills]) => (
+          {Object.entries(skillCategories).map(([category, skills], i) => (
             <div
               key={category}
-              className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-colors duration-300"
+              className={`${
+                i % 2 === 0 ? "left-slide" : "right-slide"
+              } bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-colors duration-300`}
             >
               <h3 className="text-xl font-semibold text-gray-100 mb-4">
                 {category}

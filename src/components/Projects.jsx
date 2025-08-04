@@ -80,7 +80,7 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col bg-gray-900 rounded-lg overflow-hidden border border-gray-700 hover:border-blue-400 transition-colors duration-300"
+              className="block-side flex flex-col bg-gray-900 rounded-lg overflow-hidden border border-gray-700 hover:border-blue-400 transition-colors duration-300"
             >
               <div className="w-full">
                 <YouTubeEmbed videoId={project.videoId} />

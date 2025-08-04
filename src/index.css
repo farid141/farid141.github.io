@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes appear-side {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.block-side {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.left-slide {
+  animation: slide-left linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.right-slide {
+  animation: slide-right linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}

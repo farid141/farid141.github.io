@@ -14,6 +14,7 @@ import telpro_logo from "../assets/telpro_logo.webp";
 const experiences = [
   {
     company: "PT Iotera Sinergi Digital",
+    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Full Stack Developer",
     date: "Feb 2025 – present",
     description: "",
@@ -29,6 +30,7 @@ const experiences = [
   },
   {
     company: "CV Pilarmedia Indonesia (Software House)",
+    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Full Stack Developer",
     date: "Sept 2024 – Nov 2024",
     description: "",
@@ -43,6 +45,7 @@ const experiences = [
   },
   {
     company: "PT Behaestex (Textile Manufacture)",
+    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Full Stack Web Developer",
     date: "Jan 2024 – Aug 2024",
     description: "",
@@ -57,6 +60,7 @@ const experiences = [
   },
   {
     company: "Dentech Corp ID (Education Technology)",
+    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "STM32 Guest Speaker",
     date: "Sept 2023 – March 2024",
     description: "",
@@ -70,6 +74,7 @@ const experiences = [
   },
   {
     company: "Clown Technology (IT Consulting & Project)",
+    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "IoT Engineer (Firmware)",
     date: "May 2022 - Jan 2024",
     description: "",
@@ -78,12 +83,13 @@ const experiences = [
       "Doing research and development for used sensors-actuators and algorithm in projects.",
       "Collaborated with mechanical and electrical engineers for system integration process.",
       "Provided post-project, ensuring client’s comprehensive understanding and satisfaction with deliverables.",
-],
+    ],
     tech: "C, C++, Python, Arduino, Eagle PCB design, Linux, GCP",
     image: clown_logo,
   },
   {
     company: "PT VKTR Mobilitas (Transportation System Electrification)",
+    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Navigation Systems Researcher",
     date: "Aug 2022 - Feb 2023",
     description: "",
@@ -98,6 +104,7 @@ const experiences = [
   },
   {
     company: "PT Graha Sarana Duta (Telkom Property)",
+    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Internship - Full Stack Web Developer",
     date: "Jan 2022 - Apr 2022",
     description: "",
@@ -120,16 +127,22 @@ export const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-colors duration-300"
+              className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-colors duration-300 block"
             >
               <div className="flex justify-between items-start mb-4">
                 <div className="flex gap-2 items-center">
                   <img src={exp.image} alt="" className="size-12 rounded-lg" />
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-100">
-                      {exp.company}
-                    </h3>
-                    <p className="text-blue-400">{exp.role}</p>
+                    <a
+                      href={exp.companyWeb}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h3 className="text-xl font-semibold text-gray-100">
+                        {exp.company}
+                      </h3>
+                      <p className="text-blue-400">{exp.role}</p>
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center text-gray-400">
