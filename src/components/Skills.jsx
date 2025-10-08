@@ -1,33 +1,9 @@
 import React from "react";
 import { SectionTitle } from "./common/SectionTitle";
 import { Tag } from "./common/Tag";
+import { skillCategories } from "../content";
 
 export const Skills = () => {
-  const skillCategories = {
-    "Programming Languages": [
-      "C",
-      "C++",
-      "Python",
-      "PHP",
-      "SQL",
-      "JavaScript",
-      "Typescript",
-    ],
-    Backend: ["Laravel", "CI", "FastAPI"],
-    FrontEnd: [
-      "Bootstrap",
-      "Tailwind",
-      "jQuery",
-      "Inertia",
-      "ReactJS",
-      "VueJS",
-      "AngularJS",
-    ],
-    Tools: ["VSCode", "Visual Studio", "Git", "Docker", "DBeaver", "Postman"],
-    IoT: ["Arduino IDE", "STM32Cube IDE", "Eagle"],
-    Databases: ["MySQL", "PostgreSQL", "Oracle", "SQLite", "MongoDB", "Redis"],
-  };
-
   return (
     <section id="skills" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">

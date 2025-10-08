@@ -20,7 +20,7 @@ export const Navbar = ({ activeSection }) => {
         <div className="flex justify-between items-center h-16">
           <span className="text-xl font-bold text-blue-400">FN</span>
           <div className="hidden md:flex space-x-4">
-            {['hero', 'experience', 'projects', 'skills', 'education'].map((section) => (
+            {['home', 'experience', 'projects', 'skills', 'education'].map((section) => (
               <NavLink key={section} section={section} />
             ))}
           </div>

@@ -5,7 +5,7 @@ import photo_profile from "../assets/photo_profile.webp";
 export const Hero = () => {
   return (
     <section
-      id="hero"
+      id="home"
       className="min-h-screen flex items-center pt-16 bg-gradient-to-b from-gray-900 to-gray-800"
     >
       <div className="container mx-auto px-4">

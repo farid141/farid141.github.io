@@ -1,20 +1,7 @@
 import React from "react";
 import { SectionTitle } from "./common/SectionTitle";
+import { educations } from "../content";
 
-const educations = [
-  {
-    name: "Electronic Engineering Polytechnic Institute of Surabaya",
-    title: "Bachelor of Applied Engineering, Computer Engineering",
-    date: "2019 – 2023",
-    grade: "GPA: 3.67/4.0",
-  },
-  {
-    name: "Surabaya Public High School 15",
-    title: "Natural Science Major",
-    date: "2016 – 2019",
-    grade: "GPA 86/100",
-  },
-];
 export const Education = () => {
   return (
     <section id="education" className="py-20 bg-gray-800 min-h-screen">
