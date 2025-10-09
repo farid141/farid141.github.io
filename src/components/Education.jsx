@@ -9,17 +9,21 @@ export const Education = () => {
         <SectionTitle>Educations</SectionTitle>
         {educations.map((education) => (
           <div className="max-w-4xl mx-auto ">
-            <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-colors duration-300">
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-100">
-                    {education.name}
-                  </h3>
-                  <p className="text-blue-400">{education.title}</p>
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-colors duration-300 flex gap-4">
+              <img src={education.logo} alt="" className="size-12 rounded-lg" />
+              <div className="w-full">
+                <div className="flex justify-between items-start mb-4">
+                  <div className="max-w-[80%]">
+                    <h3 className="text-xl font-semibold text-gray-100">
+                      {education.name}
+                    </h3>
+                    <p className="text-blue-400">{education.title}</p>
+                    <p>{education.description}</p>
+                  </div>
+                  <div className="text-gray-400">{education.date}</div>
                 </div>
-                <div className="text-gray-400">{education.date}</div>
+                <p className="text-gray-300">{education.grade}</p>
               </div>
-              <p className="text-gray-300">{education.grade}</p>
             </div>
           </div>
         ))}

@@ -5,6 +5,8 @@ import dentech_logo from "./assets/dentech_logo.webp";
 import clown_logo from "./assets/clown_logo.webp";
 import vktr_logo from "./assets/vktr_logo.webp";
 import telpro_logo from "./assets/telpro_logo.webp";
+import pens_logo from "./assets/PENS.webp";
+import sman15_logo from "./assets/sman15.webp";
 
 export const experiences = [
   {
@@ -209,13 +211,23 @@ export const educations = [
   {
     name: "Electronic Engineering Polytechnic Institute of Surabaya",
     title: "Bachelor of Applied Engineering, Computer Engineering",
+    logo: pens_logo,
+    description: `
+      Completed two internship programs at Graha Sarana Duta (3 months) and PT VKTR Teknologi Mobilitas (6 months). 
+      Final project focused on developing a navigation system for electric buses, integrating GNSS and geolocation-based positioning with real-time arrival estimation for the next stop.
+    `,
     date: "2019 – 2023",
     grade: "GPA: 3.67/4.0",
   },
   {
     name: "Surabaya Public High School 15",
     title: "Natural Science Major",
+    logo: sman15_logo,
+    description: `
+      Developed soft skills in confidence and leadership, serving as class leader in the final year. 
+      Represented the school in futsal competitions.
+    `,
     date: "2016 – 2019",
-    grade: "GPA 86/100",
+    grade: "GPA: 86/100",
   },
 ];
