@@ -39,8 +39,8 @@ export const Experience = () => {
               <div>
                 <p className="text-gray-300 mb-4">{exp.description}</p>
                 <ul className="text-gray-300 mb-4 list-disc list-inside">
-                  {exp.bulletPoints.map((point) => (
-                    <li>{point}</li>
+                  {exp.bulletPoints.map((point, i) => (
+                    <li key={i}>{point}</li>
                   ))}
                 </ul>
               </div>
