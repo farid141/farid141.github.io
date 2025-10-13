@@ -11,39 +11,41 @@ export default function ProjectTabs() {
   const categories = ["iot", "web_dev", "web_scrap"];
 
   return (
-    <div className="max-w-5xl mx-auto py-10">
-      <h2 className="text-3xl font-bold mb-6 text-center">My Projects</h2>
+    <div id="projects" className="bg-gray-800 min-h-screen">
+      <div className="max-w-5xl mx-auto py-10">
+        <h2 className="text-3xl font-bold mb-6 text-center">My Projects</h2>
 
-      <Tabs defaultValue="iot">
-        <TabsList className="grid w-full grid-cols-3">
+        <Tabs defaultValue="iot">
+          <TabsList className="grid w-full grid-cols-3 bg-gray-900">
+            {categories.map((cat) => (
+              <TabsTrigger key={cat} value={cat}>
+                {cat.toUpperCase()}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+
           {categories.map((cat) => (
-            <TabsTrigger key={cat} value={cat}>
-              {cat.toUpperCase()}
-            </TabsTrigger>
+            <TabsContent key={cat} value={cat}>
+              <div className="grid md:grid-cols-3 gap-6 mt-6">
+                {projects[cat].map((p, i) => (
+                  <ProjectCard
+                    key={i}
+                    project={p}
+                    onClick={() => setSelectedProject(p)}
+                  />
+                ))}
+              </div>
+            </TabsContent>
           ))}
-        </TabsList>
+        </Tabs>
 
-        {categories.map((cat) => (
-          <TabsContent key={cat} value={cat}>
-            <div className="grid md:grid-cols-3 gap-6 mt-6">
-              {projects[cat].map((p, i) => (
-                <ProjectCard
-                  key={i}
-                  project={p}
-                  onClick={() => setSelectedProject(p)}
-                />
-              ))}
-            </div>
-          </TabsContent>
-        ))}
-      </Tabs>
-
-      {selectedProject && (
-        <ProjectModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
+        {selectedProject && (
+          <ProjectModal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
+      </div>
     </div>
   );
 }
