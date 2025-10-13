@@ -1,6 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ProjectCard({ project, onClick }) {
+  const thumbnail = project.media[0]
+    ? `https://img.youtube.com/vi/${project.media[0].src}/maxresdefault.jpg`
+    : "";
   return (
     <Card
       onClick={onClick}
@@ -11,7 +14,7 @@ export default function ProjectCard({ project, onClick }) {
       </CardHeader>
       <CardContent>
         <img
-          src={project.thumbnail}
+          src={thumbnail}
           alt={project.title}
           className="rounded-lg w-full h-40 object-cover"
         />

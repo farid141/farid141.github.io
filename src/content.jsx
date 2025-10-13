@@ -140,72 +140,86 @@ export const skillCategories = {
   Databases: ["MySQL", "PostgreSQL", "Oracle", "SQLite", "MongoDB", "Redis"],
 };
 
-export const projects = [
-  {
-    title: "Laravel product transaction API with queued email notification",
-    description:
-      "API for product transaction application. The created transaction will adjust product stock accordingly and process send email in queue background",
-    tech: "Laravel",
-    link: "",
-    videoId: "Z0hPXZZcNyk",
-  },
-  {
-    title: "Laravel Todo App",
-    description:
-      "Advanced Todo application showcasing Laravel ORM relationships with modern front-end stack.",
-    tech: "Laravel, Vue.js, Tailwind CSS, Inertia",
-    link: "https://github.com/farid141/todo-app-laravel-vue-inertia",
-    videoId: "9p2p_zbVtKY",
-  },
-  {
-    title: "React Product Cart",
-    description:
-      "E-commerce cart functionality with Redux Toolkit and Firebase integration.",
-    tech: "React, Redux Toolkit, Firebase",
-    link: "https://github.com/farid141/react-redux-firebase",
-    videoId: "6wsEmp4Np94",
-  },
-  {
-    title: "Admin Panel with Dynamic Menu and Permission",
-    description:
-      "Admin panel website with dynamic menu and submenu generated from database. Provide user role-permission feature to limit user access from accessing route and display available menu for authenticated user.",
-    tech: "Laravel 11, jQuery, Bootstrap5, MySQL",
-    link: null,
-    videoId: "E8kqYNTjM3Y",
-  },
-  {
-    title: "Automated Bike Gear System",
-    description:
-      "Gathers some sensor data attached the bike such velocity, tilt angle, GPS Coordinate with Arduino to Raspberry Pi webserver. The controller will automatically set bike gear using servo based on the collected data",
-    tech: "MySQL, PHP, Python, C, Arduino, sensors, actuators",
-    link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
-    videoId: "UtObGMDVDgQ",
-  },
-  {
-    title: "Hybrid Power Management System",
-    description:
-      "This project using Arduino Mega 2560 as the main controller to control the power source of household electricity. When the battery in discharge mode, it will be powered up inverter using battery as main power. Else, the battery will be charged by wind turbine and PLN will be used as main power.",
-    tech: "C, Arduino, sensors, actuators",
-    link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
-    videoId: "vYOIzDr80R0",
-  },
-  {
-    title: "3-Phase Voltage Unbalance Alert System",
-    description:
-      "The main controller gathers and display data from 3 voltage sensors placed on each line and calculate VRMS and unbalance value. When the unbalance value exceeds the threshold value, the controller will send the warning message contains VRMS, unbalance value and GPS coordinate information via GSM.",
-    tech: "C, STM32 Cortex-M4, sensors, actuators",
-    link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
-    videoId: "UtObGMDVDgQ",
-  },
-  {
-    title: "Jobstreet Scrapper",
-    description:
-      "Scrape all jobs posted on jobstreet. Creating CSV file that consist of company name, region, description, keywords to make job scanning easiter.",
-    tech: "Python, selenium, pandas",
-    link: "https://github.com/farid141/jobstreet-scrapper",
-    videoId: "q32RDOZiAWk",
-  },
-];
+export const projects = {
+  web_dev: [
+    {
+      title: "Laravel product transaction API with queued email notification",
+      description:
+        "API for product transaction application. The created transaction will adjust product stock accordingly and process send email in queue background",
+      tech: "Laravel",
+      link: "",
+      media: [{ type: "youtube", src: "Z0hPXZZcNyk" }],
+      mediaPath: "/product_transactions",
+    },
+    {
+      title: "Laravel Todo App",
+      description:
+        "Advanced Todo application showcasing Laravel ORM relationships with modern front-end stack.",
+      tech: "Laravel, Vue.js, Tailwind CSS, Inertia",
+      link: "https://github.com/farid141/todo-app-laravel-vue-inertia",
+      media: [{ type: "youtube", src: "9p2p_zbVtKY" }],
+      mediaPath: "/todo_apps",
+    },
+    {
+      title: "React Product Cart",
+      description:
+        "E-commerce cart functionality with Redux Toolkit and Firebase integration.",
+      tech: "React, Redux Toolkit, Firebase",
+      link: "https://github.com/farid141/react-redux-firebase",
+      media: [{ type: "youtube", src: "6wsEmp4Np94" }],
+      mediaPath: "/product_cart",
+    },
+    {
+      title: "Admin Panel with Dynamic Menu and Permission",
+      description:
+        "Admin panel website with dynamic menu and submenu generated from database. Provide user role-permission feature to limit user access from accessing route and display available menu for authenticated user.",
+      tech: "Laravel 11, jQuery, Bootstrap5, MySQL",
+      link: null,
+      media: [{ type: "youtube", src: "E8kqYNTjM3Y" }],
+      mediaPath: "/admin_panel",
+    },
+  ],
+  iot: [
+    {
+      title: "Automated Bike Gear System",
+      description:
+        "Gathers some sensor data attached the bike such velocity, tilt angle, GPS Coordinate with Arduino to Raspberry Pi webserver. The controller will automatically set bike gear using servo based on the collected data",
+      tech: "MySQL, PHP, Python, C, Arduino, sensors, actuators",
+      link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
+      media: [{ type: "youtube", src: "UtObGMDVDgQ" }],
+      mediaPath: "/automated_gear",
+    },
+    {
+      title: "Hybrid Power Management System",
+      description:
+        "This project using Arduino Mega 2560 as the main controller to control the power source of household electricity. When the battery in discharge mode, it will be powered up inverter using battery as main power. Else, the battery will be charged by wind turbine and PLN will be used as main power.",
+      tech: "C, Arduino, sensors, actuators",
+      link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
+      media: [{ type: "youtube", src: "vYOIzDr80R0" }],
+      mediaPath: "/hybrid_power",
+    },
+    {
+      title: "3-Phase Voltage Unbalance Alert System",
+      description:
+        "The main controller gathers and display data from 3 voltage sensors placed on each line and calculate VRMS and unbalance value. When the unbalance value exceeds the threshold value, the controller will send the warning message contains VRMS, unbalance value and GPS coordinate information via GSM.",
+      tech: "C, STM32 Cortex-M4, sensors, actuators",
+      link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
+      media: [{ type: "youtube", src: "UtObGMDVDgQ" }],
+      mediaPath: "/3_phase",
+    },
+  ],
+  web_scrap: [
+    {
+      title: "Jobstreet Scrapper",
+      description:
+        "Scrape all jobs posted on jobstreet. Creating CSV file that consist of company name, region, description, keywords to make job scanning easiter.",
+      tech: "Python, selenium, pandas",
+      link: "https://github.com/farid141/jobstreet-scrapper",
+      media: [{ type: "youtube", src: "q32RDOZiAWk" }],
+      mediaPath: "/jobstreet_scrapper",
+    },
+  ],
+};
 
 export const educations = [
   {

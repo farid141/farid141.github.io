@@ -4,16 +4,19 @@ import ProjectCarousel from "./ProjectCarousel";
 export default function ProjectModal({ project, onClose }) {
   return (
     <Dialog open={!!project} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl p-0 overflow-hidden">
+      <DialogContent className="max-w-7xl p-0 overflow-hidden rounded-2xl">
         <div className="grid md:grid-cols-2">
-          <ProjectCarousel media={project.media} />
+          <ProjectCarousel
+            media={project.media}
+            mediaPath={project.mediaPath}
+          />
           <div className="p-6">
             <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
             <p className="text-sm text-muted-foreground mb-4">
-              {project.longDesc}
+              {project.description}
             </p>
             <p>
-              <strong>Tech Stack:</strong> {project.tech.join(", ")}
+              <strong>Tech Stack:</strong> {project.tech}
             </p>
             {project.link && (
               <a

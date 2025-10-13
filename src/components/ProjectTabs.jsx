@@ -1,15 +1,14 @@
-// components/ProjectTabs.tsx
 "use client";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
-import { projects } from "@/data/projects";
+import { projects } from "@/content";
 
 export default function ProjectTabs() {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const categories = ["iot", "web-dev", "web-scrap"];
+  const categories = ["iot", "web_dev", "web_scrap"];
 
   return (
     <div className="max-w-5xl mx-auto py-10">
@@ -27,15 +26,13 @@ export default function ProjectTabs() {
         {categories.map((cat) => (
           <TabsContent key={cat} value={cat}>
             <div className="grid md:grid-cols-3 gap-6 mt-6">
-              {projects
-                .filter((p) => p.category === cat)
-                .map((p) => (
-                  <ProjectCard
-                    key={p.id}
-                    project={p}
-                    onClick={() => setSelectedProject(p)}
-                  />
-                ))}
+              {projects[cat].map((p, i) => (
+                <ProjectCard
+                  key={i}
+                  project={p}
+                  onClick={() => setSelectedProject(p)}
+                />
+              ))}
             </div>
           </TabsContent>
         ))}
