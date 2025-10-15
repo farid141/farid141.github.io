@@ -11,7 +11,7 @@ export default function ProjectTabs() {
   const categories = ["iot", "web_dev", "web_scrap"];
 
   return (
-    <div id="projects" className="bg-gray-800 min-h-screen">
+    <div id="projects" className="py-20 bg-gray-800 min-h-screen">
       <div className="max-w-5xl mx-auto py-10">
         <h2 className="text-3xl font-bold mb-6 text-center">My Projects</h2>
 

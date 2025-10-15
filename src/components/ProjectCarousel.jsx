@@ -20,25 +20,27 @@ export default function ProjectCarousel({ media, mediaPath }) {
 
   return (
     <div className="relative h-96 bg-black flex items-center justify-center">
-      {current.type === "image" && (
+      {current?.type === "image" && (
         <img
-          src={current.src}
+          src={current?.src}
           alt=""
           className="object-contain h-full w-full cursor-zoom-in"
           onClick={() => setZoomed(true)}
         />
       )}
-      {current.type === "video" && (
+      {current?.type === "video" && (
         <video
-          src={current.src}
+          src={current?.src}
           controls
           className="object-contain h-full w-full"
         />
       )}
-      {current.type === "youtube" && (
+      {current?.type === "youtube" && (
         <iframe
           className="w-full h-full"
-          src={`https://www.youtube.com/embed/${extractYoutubeId(current.src)}`}
+          src={`https://www.youtube.com/embed/${extractYoutubeId(
+            current?.src
+          )}`}
           title="YouTube video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -61,7 +63,7 @@ export default function ProjectCarousel({ media, mediaPath }) {
       <Dialog open={zoomed} onOpenChange={setZoomed}>
         <DialogContent className="max-w-6xl p-0 bg-transparent border-none shadow-none">
           <img
-            src={current.src}
+            src={current?.src}
             alt=""
             className="w-full h-auto object-contain rounded-lg cursor-zoom-out"
             onClick={() => setZoomed(false)}

@@ -143,9 +143,12 @@ export const skillCategories = {
 export const projects = {
   web_dev: [
     {
-      title: "Laravel product transaction API with queued email notification",
-      description:
-        "API for product transaction application. The created transaction will adjust product stock accordingly and process send email in queue background",
+      title: "Laravel Product Transaction API with Queued Email Notification",
+      description: `This application provides CRUD APIs for products and transactions. 
+        Each product includes details such as price, stock, and images. 
+        Transactions can contain multiple products with quantities and customer information. 
+        After a transaction is successfully created, an email notification job is dispatched to a queue to prevent blocking the response process. 
+        The email is then captured in Mailtrap for testing purposes.`,
       tech: "Laravel",
       link: "",
       media: [{ type: "youtube", src: "Z0hPXZZcNyk" }],
@@ -153,8 +156,9 @@ export const projects = {
     },
     {
       title: "Laravel Todo App",
-      description:
-        "Advanced Todo application showcasing Laravel ORM relationships with modern front-end stack.",
+      description: `I enhanced my full-stack development skills through this project by implementing various model relationships 
+        (hasManyThrough, morphMany, oneToMany, manyToMany, etc.) and integrating Laravel Breeze Authentication with Vue.js and Inertia. 
+        Users can create and edit tasks, each containing multiple users with assigned roles, as well as multiple subtasks with tags.`,
       tech: "Laravel, Vue.js, Tailwind CSS, Inertia",
       link: "https://github.com/farid141/todo-app-laravel-vue-inertia",
       media: [{ type: "youtube", src: "9p2p_zbVtKY" }],
@@ -162,8 +166,8 @@ export const projects = {
     },
     {
       title: "React Product Cart",
-      description:
-        "E-commerce cart functionality with Redux Toolkit and Firebase integration.",
+      description: `An e-commerce cart system built with Redux Toolkit for deep component-level state management. 
+        Firebase Realtime Database is used as persistent storage, ensuring that data remains intact even after page reloads.`,
       tech: "React, Redux Toolkit, Firebase",
       link: "https://github.com/farid141/react-redux-firebase",
       media: [{ type: "youtube", src: "6wsEmp4Np94" }],
@@ -171,9 +175,10 @@ export const projects = {
     },
     {
       title: "Admin Panel with Dynamic Menu and Permission",
-      description:
-        "Admin panel website with dynamic menu and submenu generated from database. Provide user role-permission feature to limit user access from accessing route and display available menu for authenticated user.",
-      tech: "Laravel 11, jQuery, Bootstrap5, MySQL",
+      description: `A boilerplate admin dashboard where sidebar menus and submenus are dynamically generated from the database. 
+        New menus or submenus can be created directly from the interface. 
+        It also implements role-based access control on both frontend and backend.`,
+      tech: "Laravel 11, jQuery, Bootstrap 5, MySQL",
       link: null,
       media: [{ type: "youtube", src: "E8kqYNTjM3Y" }],
       mediaPath: "/admin_panel",
@@ -182,8 +187,10 @@ export const projects = {
   iot: [
     {
       title: "Automated Bike Gear System",
-      description:
-        "Gathers some sensor data attached the bike such velocity, tilt angle, GPS Coordinate with Arduino to Raspberry Pi webserver. The controller will automatically set bike gear using servo based on the collected data",
+      description: `Collects sensor data from a bike — including velocity (encoder-based), tilt angle, and GPS coordinates — using Arduino. 
+        The data is sent to a Raspberry Pi via USB, where it is stored in a local database using a Python script. 
+        These parameters are also used to control a servo motor, with control signals sent back to the Arduino. 
+        The processed data is displayed on a local web server.`,
       tech: "MySQL, PHP, Python, C, Arduino, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
       media: [{ type: "youtube", src: "UtObGMDVDgQ" }],
@@ -191,8 +198,28 @@ export const projects = {
     },
     {
       title: "Hybrid Power Management System",
-      description:
-        "This project using Arduino Mega 2560 as the main controller to control the power source of household electricity. When the battery in discharge mode, it will be powered up inverter using battery as main power. Else, the battery will be charged by wind turbine and PLN will be used as main power.",
+      description: (
+        <>
+          This project demonstrates a hybrid power source system combining a
+          battery with AC inverter and grid power (PLN). The modified power
+          supply simulates a turbine. The system handles three operating
+          conditions:
+          <ul className="list-disc">
+            <li>
+              When PLN is unavailable, the battery is low, and turbine power is
+              sufficient, the battery is charged in Constant Voltage (CV) mode.
+            </li>
+            <li>
+              Once the battery is charged, it becomes the main power source,
+              supplying energy through the inverter.
+            </li>
+            <li>
+              If PLN is available and the battery is insufficient, the system
+              switches to PLN as the power source.
+            </li>
+          </ul>
+        </>
+      ),
       tech: "C, Arduino, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
       media: [{ type: "youtube", src: "vYOIzDr80R0" }],
@@ -200,20 +227,21 @@ export const projects = {
     },
     {
       title: "3-Phase Voltage Unbalance Alert System",
-      description:
-        "The main controller gathers and display data from 3 voltage sensors placed on each line and calculate VRMS and unbalance value. When the unbalance value exceeds the threshold value, the controller will send the warning message contains VRMS, unbalance value and GPS coordinate information via GSM.",
+      description: `The main controller collects and displays voltage data from three sensors, one for each phase, and calculates VRMS values from analog readings. 
+        It then computes the voltage unbalance percentage across the three phases. 
+        When the unbalance exceeds a predefined threshold, an SMS alert is sent containing VRMS values, unbalance ratio, and GPS coordinates via a GSM module.`,
       tech: "C, STM32 Cortex-M4, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
-      media: [{ type: "youtube", src: "UtObGMDVDgQ" }],
+      media: [],
       mediaPath: "/3_phase",
     },
   ],
   web_scrap: [
     {
-      title: "Jobstreet Scrapper",
-      description:
-        "Scrape all jobs posted on jobstreet. Creating CSV file that consist of company name, region, description, keywords to make job scanning easiter.",
-      tech: "Python, selenium, pandas",
+      title: "Jobstreet Scraper",
+      description: `A Python-based web scraper that automatically collects job postings from Jobstreet across multiple pages based on a given keyword. 
+        The scraped data is saved into a CSV file containing company name, location, description, and keywords to simplify job search and analysis.`,
+      tech: "Python, Selenium, Pandas",
       link: "https://github.com/farid141/jobstreet-scrapper",
       media: [{ type: "youtube", src: "q32RDOZiAWk" }],
       mediaPath: "/jobstreet_scrapper",
@@ -228,8 +256,8 @@ export const educations = [
     logo: pens_logo,
     description: `
       Completed two internship programs at Graha Sarana Duta (3 months) and PT VKTR Teknologi Mobilitas (6 months). 
-      Final project focused on developing a navigation system for electric buses, integrating GNSS and geolocation-based positioning with real-time arrival estimation for the next stop.
-    `,
+      The final project focused on developing a navigation system for electric buses, integrating GNSS and geolocation-based positioning 
+      with real-time arrival estimation for the next stop.`,
     date: "2019 – 2023",
     grade: "GPA: 3.67/4.0",
   },
@@ -238,9 +266,8 @@ export const educations = [
     title: "Natural Science Major",
     logo: sman15_logo,
     description: `
-      Developed soft skills in confidence and leadership, serving as class leader in the final year. 
-      Represented the school in futsal competitions.
-    `,
+      Developed soft skills such as confidence and leadership by serving as class leader in the final year. 
+      Represented the school in futsal competitions.`,
     date: "2016 – 2019",
     grade: "GPA: 86/100",
   },
