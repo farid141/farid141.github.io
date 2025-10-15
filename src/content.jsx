@@ -14,13 +14,14 @@ export const experiences = [
     companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Full Stack Developer",
     date: "Feb 2025 – present",
-    description: "",
     bulletPoints: [
-      "Participated in BSI (Bank Syariah Indonesia) Smart Vault project as a Fullstack Developer.",
-      "Converted 20+ figma UI design into web pages and its reactivity using React Context.",
-      "Wrapped web-based React app into desktop-based app using Electron JS.",
-      "Developed REST API using FastAPI with repository-pattern and SQLModel as ORM and data validatior.",
-      "Implemented caching strategy using Redis to minimize database call and heavy computation process.",
+      "Converted 20+ figma UI design into web pages and its reactivity using Context API.",
+      "Integrated devices to the web apps (Smart Scale, webcam, and RFID reader) for Gold linking process.",
+      "Implemented cookie-based JWT auth with per-page token & role checks. ",
+      "Apply AES Encryption on client side for all content of HTTP request and reseponse.",
+      "Built 20+ server-side paginated, filterable, and sortable tables.",
+      "Built polling mechanism with interval-based updates to display RFID scan results in 4 different pages.",
+      "Developed FastAPI and Redis Backend with repository-pattern and SQLModel as ORM and data validatior",
     ],
     tech: "Python, FastAPI, Redis, Javascript, Electron, React, ANT Design, Typescript, Oracle, SQLite",
     image: iotera_logo,
@@ -30,7 +31,6 @@ export const experiences = [
     companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Full Stack Developer",
     date: "Sept 2024 – Nov 2024",
-    description: "",
     bulletPoints: [
       "Customized existing ERP modules (Sales Order, Warehousing, Inventory) to align with client needs.",
       "Implemented web features (PDF generation, role-permissions, and barcode generation) for POS apps.",
@@ -45,11 +45,9 @@ export const experiences = [
     companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Full Stack Web Developer",
     date: "Jan 2024 – Aug 2024",
-    description: "",
     bulletPoints: [
       "Integrated 3rd party API “MyJurnal” SaaS data with proper sync mechanism to internal system.",
       "Created 6 comprehensive Excel reports, improving the efficiency of reporting across the organization.",
-      "Conducted daily meeting and weekly sprints to align product with end-user requirements.",
       "Responsible for ongoing maintenance and enhancements of internal website in the codebase.",
     ],
     tech: "Laravel, Code Igniter, Bootstrap, jQuery, MySQL",
@@ -60,7 +58,6 @@ export const experiences = [
     companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "STM32 Guest Speaker",
     date: "Sept 2023 – March 2024",
-    description: "",
     bulletPoints: [
       "Delivered 4 comprehensive presentation about STM32 microcontrollers features and specifications.",
       "Demonstrated practical examples with real device in live during the event.",
@@ -74,7 +71,6 @@ export const experiences = [
     companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "IoT Engineer (Firmware)",
     date: "May 2022 - Jan 2024",
-    description: "",
     bulletPoints: [
       "Completed 15+ projects, mainly programming Microcontroller (Arduino, ESP32, STM32), Mini-PC, AI, web.",
       "Doing research and development for used sensors-actuators and algorithm in projects.",
@@ -89,7 +85,6 @@ export const experiences = [
     companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Navigation Systems Researcher",
     date: "Aug 2022 - Feb 2023",
-    description: "",
     bulletPoints: [
       "Analysed diverse GPS modules and Cell-tower positioning performance in various weather and environment.",
       "Developed Python script to use multi-threading for collecting data from GPS, surrounding cell tower RSSI, Google Geolocation API and Google Distance Matrix API.",
@@ -104,7 +99,6 @@ export const experiences = [
     companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
     role: "Internship - Full Stack Web Developer",
     date: "Jan 2022 - Apr 2022",
-    description: "",
     bulletPoints: [
       "Developed web apps for file management.",
       "Implemented a role-based access control system and post and file ownership features to limit user capability.",
