@@ -14,7 +14,7 @@ export function getProjectMedia(folder) {
             // `/src` segment when using `import.meta.glob` with absolute patterns.
             // Only strip `/src` in production (build/deploy e.g., GitHub Pages).
             const src = import.meta.env && import.meta.env.PROD
-                ? path.replace("/src", "")
+                ? import.meta.env.BASE_URL + path.replace("/src/", "")
                 : path
             return { type, src }
         })
