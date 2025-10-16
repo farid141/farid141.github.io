@@ -2,6 +2,7 @@ export function getProjectMedia(folder) {
     const allFiles = import.meta.glob("/src/assets/projects/**/*.{jpg,jpeg,png,mp4,webm}", {
         eager: true,
     })
+    console.log(allFiles)
 
     // filter sesuai folder yang diminta
     const media = Object.keys(allFiles)
@@ -9,9 +10,16 @@ export function getProjectMedia(folder) {
         .map(path => {
             const ext = path.split(".").pop()
             const type = ext === "mp4" || ext === "webm" ? "video" : "image"
-            const src = path.replace("/src", "")
+            // During Vite production build the generated asset paths include the leading
+            // `/src` segment when using `import.meta.glob` with absolute patterns.
+            // Only strip `/src` in production (build/deploy e.g., GitHub Pages).
+            const src = import.meta.env && import.meta.env.PROD
+                ? path.replace("/src", "")
+                : path
             return { type, src }
         })
+
+    console.log(media)
 
     return media
 }
