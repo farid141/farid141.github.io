@@ -3,6 +3,7 @@ export function getProjectMedia(folder) {
         eager: true,
     })
     console.log(allFiles)
+    //test
 
     // filter sesuai folder yang diminta
     const media = Object.keys(allFiles)
