@@ -8,6 +8,9 @@ import ProjectTabs from "./components/ProjectTabs";
 
 function App() {
   const activeSection = window.location.hash;
+  import.meta.glob("/src/assets/projects/**/*.{jpg,jpeg,png,mp4,webm}", {
+      eager: true,
+  })
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
