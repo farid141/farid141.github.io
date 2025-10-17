@@ -1,3 +1,4 @@
+import { ModeToggle } from '@/components/mode-toggle';
 import React from 'react';
 
 export const Navbar = ({ activeSection }) => {
@@ -23,6 +24,7 @@ export const Navbar = ({ activeSection }) => {
             {['home', 'experience', 'projects', 'skills', 'education'].map((section) => (
               <NavLink key={section} section={section} />
             ))}
+            <ModeToggle/>
           </div>
         </div>
       </div>
