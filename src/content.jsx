@@ -23,7 +23,7 @@ export const experiences = [
       "Built polling mechanism with interval-based updates to display RFID scan results in 4 different pages.",
       "Developed FastAPI and Redis Backend with repository-pattern and SQLModel as ORM and data validatior",
     ],
-    tech: "Python, FastAPI, Redis, Javascript, Electron, React, ANT Design, Typescript, Oracle, SQLite",
+    tech: "javascript, typescript, react, antdesign, python, fastapi, redis, oracle, sqlite",
     image: iotera_logo,
   },
   {
@@ -37,7 +37,7 @@ export const experiences = [
       "Integrate Firebase Cloud Messaging (FCM) OAuth2 API with Laravel app to send mobile push notification.",
       "Provide API to mobile dev for Warehouse Management System (WMS) apps.",
     ],
-    tech: "Laravel, AngularJS, VueJS, Bootstrap, jQuery, MySQL",
+    tech: "laravel, mysql, angular, vuejs, bootstrap, jquery",
     image: pilarmedia_logo,
   },
   {
@@ -50,7 +50,7 @@ export const experiences = [
       "Created 6 comprehensive Excel reports, improving the efficiency of reporting across the organization.",
       "Responsible for ongoing maintenance and enhancements of internal website in the codebase.",
     ],
-    tech: "Laravel, Code Igniter, Bootstrap, jQuery, MySQL",
+    tech: "laravel, codeigniter, mysql, bootstrap, jquery",
     image: behaestex_logo,
   },
   {
@@ -63,7 +63,7 @@ export const experiences = [
       "Demonstrated practical examples with real device in live during the event.",
       "Offered insights and hands-on experience about embedded system to participants.",
     ],
-    tech: "C++, C, STM32, Power Point.",
+    tech: "cpp, c, arduino, powerpoint",
     image: dentech_logo,
   },
   {
@@ -77,7 +77,7 @@ export const experiences = [
       "Collaborated with mechanical and electrical engineers for system integration process.",
       "Provided post-project, ensuring client’s comprehensive understanding and satisfaction with deliverables.",
     ],
-    tech: "C, C++, Python, Arduino, Eagle PCB design, Linux, GCP",
+    tech: "cpp, c, python, arduino, linux, google, GCP, Eagle PCB",
     image: clown_logo,
   },
   {
@@ -91,7 +91,7 @@ export const experiences = [
       "Improved positioning accuracy with Kalman Filter and map-matching algorithm, ensuring the vehicle remains aligned with the road network.",
       "Integrated Google “Distance Matrix API” to the system for time arrival estimation to the next destination.",
     ],
-    tech: "Raspberry Pi, Linux, Python, NumPy, Pandas.",
+    tech: "raspberrypi, linux, python, numpy, pandas",
     image: vktr_logo,
   },
   {
@@ -104,7 +104,7 @@ export const experiences = [
       "Implemented a role-based access control system and post and file ownership features to limit user capability.",
       "Deployed and maintained website on hosting platform, ensuring online accessibility.",
     ],
-    tech: "Laravel, Bootstrap, jQuery, MySQL",
+    tech: "laravel, mysql, bootstrap, jquery",
     image: telpro_logo,
   },
 ];

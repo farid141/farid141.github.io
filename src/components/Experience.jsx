@@ -44,9 +44,10 @@ export const Experience = () => {
                   ))}
                 </ul>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 align-center">
+                <span className="font-bold self-center">Tech Stack</span>
                 {exp.tech.split(", ").map((tech, i) => (
-                  <Tag key={i}>{tech}</Tag>
+                  <i class={`ci ci-${tech} ci-2x`} title={tech} />
                 ))}
               </div>
             </div>
