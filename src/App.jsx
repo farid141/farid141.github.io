@@ -11,7 +11,7 @@ function App() {
   const activeSection = window.location.hash;
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="min-h-screen bg-gray-900 text-gray-100">
+      <div className="min-h-screen bg-background text-foreground">
         <Navbar activeSection={activeSection} />
         <Hero />
         <Experience />

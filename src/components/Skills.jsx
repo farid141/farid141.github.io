@@ -5,7 +5,7 @@ import { skillCategories } from "../content";
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-gray-900">
+    <section id="skills" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <SectionTitle>Skills</SectionTitle>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -14,9 +14,9 @@ export const Skills = () => {
               key={category}
               className={`${
                 i % 2 === 0 ? "left-slide" : "right-slide"
-              } bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-colors duration-300`}
+              } bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors duration-300`}
             >
-              <h3 className="text-xl font-semibold text-gray-100 mb-4">
+              <h3 className="text-xl font-semibold text-card-foreground mb-4">
                 {category}
               </h3>
               <div className="flex flex-wrap gap-2">

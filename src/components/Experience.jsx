@@ -6,14 +6,14 @@ import { experiences } from "../content";
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-gray-900">
+    <section id="experience" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <SectionTitle>Experience</SectionTitle>
         <div className="max-w-4xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-colors duration-300 block"
+              className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors duration-300 block"
             >
               <div className="flex justify-between items-start mb-4">
                 <div className="flex gap-2 items-center">
@@ -24,21 +24,21 @@ export const Experience = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <h3 className="text-xl font-semibold text-gray-100">
+                      <h3 className="text-xl font-semibold text-card-foreground">
                         {exp.company}
                       </h3>
-                      <p className="text-blue-400">{exp.role}</p>
+                      <p className="text-primary">{exp.role}</p>
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center text-gray-400">
+                <div className="flex items-center text-muted-foreground">
                   <Calendar size={16} className="mr-2" />
                   {exp.date}
                 </div>
               </div>
               <div>
-                <p className="text-gray-300 mb-4">{exp.description}</p>
-                <ul className="text-gray-300 mb-4 list-disc list-inside">
+                <p className="text-card-foreground mb-4">{exp.description}</p>
+                <ul className="text-card-foreground mb-4 list-disc list-inside">
                   {exp.bulletPoints.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
