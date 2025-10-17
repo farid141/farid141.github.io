@@ -8,13 +8,13 @@ import telpro_logo from "./assets/telpro_logo.webp";
 import pens_logo from "./assets/PENS.webp";
 import sman15_logo from "./assets/sman15.webp";
 
-import product_transactions_1 from "@/assets/projects/product_transactions/create_product.png"
-import product_transactions_2 from "@/assets/projects/product_transactions/create_transaction.png"
-import product_transactions_3 from "@/assets/projects/product_transactions/mailtrap.png"
+import product_transactions_1 from "@/assets/projects/product_transactions/create_product.png";
+import product_transactions_2 from "@/assets/projects/product_transactions/create_transaction.png";
+import product_transactions_3 from "@/assets/projects/product_transactions/mailtrap.png";
 
-import automated_gear_1 from "@/assets/projects/automated_gear/Screenshot_1.png"
-import automated_gear_2 from "@/assets/projects/automated_gear/Screenshot_2.png"
-import automated_gear_3 from "@/assets/projects/automated_gear/Screenshot_3.png"
+import automated_gear_1 from "@/assets/projects/automated_gear/Screenshot_1.png";
+import automated_gear_2 from "@/assets/projects/automated_gear/Screenshot_2.png";
+import automated_gear_3 from "@/assets/projects/automated_gear/Screenshot_3.png";
 
 export const experiences = [
   {
@@ -42,7 +42,7 @@ export const experiences = [
     bulletPoints: [
       "Customized existing ERP modules (Sales Order, Warehousing, Inventory) to align with client needs.",
       "Implemented web features (PDF generation, role-permissions, and barcode generation) for POS apps.",
-      "Integrate Firebase Cloud Messaging (FCM) OAuth2 API with Laravel app to send mobile push notification.",
+      "Integrate Firebase Cloud Messaging (FCM) OAuth2 API with laravel app to send mobile push notification.",
       "Provide API to mobile dev for Warehouse Management System (WMS) apps.",
     ],
     tech: "laravel, mysql, angular, vuejs, bootstrap, jquery",
@@ -119,27 +119,27 @@ export const experiences = [
 
 export const skillCategories = {
   "Programming Languages": [
-    "C",
-    "C++",
-    "Python",
-    "PHP",
-    "SQL",
-    "JavaScript",
-    "Typescript",
+    "c",
+    "cpp",
+    "python",
+    "php",
+    "javascript",
+    "typescript",
+    "sql",
   ],
-  Backend: ["Laravel", "CI", "FastAPI"],
+  Backend: ["laravel", "codeigniter", "fastapi", "nodejs"],
   FrontEnd: [
-    "Bootstrap",
-    "Tailwind",
-    "jQuery",
-    "Inertia",
-    "ReactJS",
-    "VueJS",
-    "AngularJS",
+    "bootstrap",
+    "tailwindcss",
+    "jquery",
+    "reactjs",
+    "vuejs",
+    "angularjs",
+    "inertiajs",
   ],
-  Tools: ["VSCode", "Visual Studio", "Git", "Docker", "DBeaver", "Postman"],
-  IoT: ["Arduino IDE", "STM32Cube IDE", "Eagle"],
-  Databases: ["MySQL", "PostgreSQL", "Oracle", "SQLite", "MongoDB", "Redis"],
+  Tools: ["vscode", "visualstudio", "git", "docker", "dbeaver", "postman"],
+  IoT: ["arduino", "stm32ide", "eagle"],
+  Databases: ["mysql", "postgresql", "oracle", "sqlite", "mongodb", "redis"],
 };
 
 export const projects = {
@@ -151,13 +151,13 @@ export const projects = {
         Transactions can contain multiple products with quantities and customer information. 
         After a transaction is successfully created, an email notification job is dispatched to a queue to prevent blocking the response process. 
         The email is then captured in Mailtrap for testing purposes.`,
-      tech: "Laravel",
+      tech: "laravel",
       link: "",
       media: [
-        {type: "youtube", src: "Z0hPXZZcNyk"},
-        {type: "image", src: product_transactions_1},
-        {type: "image", src: product_transactions_2},
-        {type: "image", src: product_transactions_3},
+        { type: "youtube", src: "Z0hPXZZcNyk" },
+        { type: "image", src: product_transactions_1 },
+        { type: "image", src: product_transactions_2 },
+        { type: "image", src: product_transactions_3 },
       ],
       mediaPath: "/product_transactions",
     },
@@ -166,7 +166,7 @@ export const projects = {
       description: `I enhanced my full-stack development skills through this project by implementing various model relationships 
         (hasManyThrough, morphMany, oneToMany, manyToMany, etc.) and integrating Laravel Breeze Authentication with Vue.js and Inertia. 
         Users can create and edit tasks, each containing multiple users with assigned roles, as well as multiple subtasks with tags.`,
-      tech: "Laravel, Vue.js, Tailwind CSS, Inertia",
+      tech: "laravel, vuejs, tailwindcss, inertiajs",
       link: "https://github.com/farid141/todo-app-laravel-vue-inertia",
       media: [{ type: "youtube", src: "9p2p_zbVtKY" }],
       mediaPath: "/todo_apps",
@@ -175,7 +175,7 @@ export const projects = {
       title: "React Product Cart",
       description: `An e-commerce cart system built with Redux Toolkit for deep component-level state management. 
         Firebase Realtime Database is used as persistent storage, ensuring that data remains intact even after page reloads.`,
-      tech: "React, Redux Toolkit, Firebase",
+      tech: "react, redux, firebase",
       link: "https://github.com/farid141/react-redux-firebase",
       media: [{ type: "youtube", src: "6wsEmp4Np94" }],
       mediaPath: "/product_cart",
@@ -185,7 +185,7 @@ export const projects = {
       description: `A boilerplate admin dashboard where sidebar menus and submenus are dynamically generated from the database. 
         New menus or submenus can be created directly from the interface. 
         It also implements role-based access control on both frontend and backend.`,
-      tech: "Laravel 11, jQuery, Bootstrap 5, MySQL",
+      tech: "laravel, mysql, jquery, bootstrap",
       link: null,
       media: [{ type: "youtube", src: "E8kqYNTjM3Y" }],
       mediaPath: "/admin_panel",
@@ -198,7 +198,7 @@ export const projects = {
         The data is sent to a Raspberry Pi via USB, where it is stored in a local database using a Python script. 
         These parameters are also used to control a servo motor, with control signals sent back to the Arduino. 
         The processed data is displayed on a local web server.`,
-      tech: "MySQL, PHP, Python, C, Arduino, sensors, actuators",
+      tech: "raspberrypi, mysql, php, python, c, arduino, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
       media: [
         { type: "youtube", src: "UtObGMDVDgQ" },
@@ -232,7 +232,7 @@ export const projects = {
           </ul>
         </>
       ),
-      tech: "C, Arduino, sensors, actuators",
+      tech: "c, arduino, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
       media: [{ type: "youtube", src: "vYOIzDr80R0" }],
       mediaPath: "/hybrid_power",
@@ -242,7 +242,7 @@ export const projects = {
       description: `The main controller collects and displays voltage data from three sensors, one for each phase, and calculates VRMS values from analog readings. 
         It then computes the voltage unbalance percentage across the three phases. 
         When the unbalance exceeds a predefined threshold, an SMS alert is sent containing VRMS values, unbalance ratio, and GPS coordinates via a GSM module.`,
-      tech: "C, STM32 Cortex-M4, sensors, actuators",
+      tech: "c, STM32 Cortex-M4, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
       media: [],
       mediaPath: "/3_phase",
@@ -253,7 +253,7 @@ export const projects = {
       title: "Jobstreet Scraper",
       description: `A Python-based web scraper that automatically collects job postings from Jobstreet across multiple pages based on a given keyword. 
         The scraped data is saved into a CSV file containing company name, location, description, and keywords to simplify job search and analysis.`,
-      tech: "Python, Selenium, Pandas",
+      tech: "python, selenium, pandas",
       link: "https://github.com/farid141/jobstreet-scrapper",
       media: [{ type: "youtube", src: "q32RDOZiAWk" }],
       mediaPath: "/jobstreet_scrapper",

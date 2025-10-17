@@ -11,12 +11,19 @@ export default function ProjectModal({ project, onClose }) {
             mediaPath={project.mediaPath}
           />
           <div className="p-6">
-            <h3 className="text-2xl font-semibold mb-2 text-foreground">{project.title}</h3>
+            <h3 className="text-2xl font-semibold mb-2 text-foreground">
+              {project.title}
+            </h3>
             <p className="text-sm text-muted-foreground mb-4">
               {project.description}
             </p>
             <p className="text-foreground">
-              <strong>Tech Stack:</strong> {project.tech}
+              <div className="flex flex-wrap gap-2 align-center">
+                <span className="font-bold self-center">Tech Stack</span>
+                {project.tech.split(", ").map((tech, i) => (
+                  <i class={`ci ci-${tech} ci-2x`} title={tech} />
+                ))}
+              </div>
             </p>
             {project.link && (
               <a
