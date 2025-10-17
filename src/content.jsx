@@ -8,6 +8,14 @@ import telpro_logo from "./assets/telpro_logo.webp";
 import pens_logo from "./assets/PENS.webp";
 import sman15_logo from "./assets/sman15.webp";
 
+import product_transactions_1 from "@/assets/projects/product_transactions/create_product.png"
+import product_transactions_2 from "@/assets/projects/product_transactions/create_transaction.png"
+import product_transactions_3 from "@/assets/projects/product_transactions/mailtrap.png"
+
+import automated_gear_1 from "@/assets/projects/automated_gear/Screenshot_1.png"
+import automated_gear_2 from "@/assets/projects/automated_gear/Screenshot_2.png"
+import automated_gear_3 from "@/assets/projects/automated_gear/Screenshot_3.png"
+
 export const experiences = [
   {
     company: "PT Iotera Sinergi Digital",
@@ -145,7 +153,12 @@ export const projects = {
         The email is then captured in Mailtrap for testing purposes.`,
       tech: "Laravel",
       link: "",
-      media: [{ type: "youtube", src: "Z0hPXZZcNyk" }],
+      media: [
+        {type: "youtube", src: "Z0hPXZZcNyk"},
+        {type: "image", src: product_transactions_1},
+        {type: "image", src: product_transactions_2},
+        {type: "image", src: product_transactions_3},
+      ],
       mediaPath: "/product_transactions",
     },
     {
@@ -187,7 +200,12 @@ export const projects = {
         The processed data is displayed on a local web server.`,
       tech: "MySQL, PHP, Python, C, Arduino, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
-      media: [{ type: "youtube", src: "UtObGMDVDgQ" }],
+      media: [
+        { type: "youtube", src: "UtObGMDVDgQ" },
+        { type: "image", src: automated_gear_1 },
+        { type: "image", src: automated_gear_2 },
+        { type: "image", src: automated_gear_3 },
+      ],
       mediaPath: "/automated_gear",
     },
     {

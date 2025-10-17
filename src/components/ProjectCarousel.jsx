@@ -2,16 +2,16 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { extractYoutubeId, getProjectMedia } from "@/utils";
-import { Dialog, DialogContent } from "./ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "./ui/dialog";
 
 export default function ProjectCarousel({ media, mediaPath }) {
   const [index, setIndex] = useState(0);
   const [zoomed, setZoomed] = useState(false);
 
-  if (mediaPath) {
-    const imgMedia = getProjectMedia(mediaPath);
-    media = media.concat(imgMedia);
-  }
+  // if (mediaPath) {
+  //   const imgMedia = getProjectMedia(mediaPath);
+  //   media = media.concat(imgMedia);
+  // }
 
   const next = () => setIndex((index + 1) % media.length);
   const prev = () => setIndex((index - 1 + media.length) % media.length);
@@ -62,6 +62,7 @@ export default function ProjectCarousel({ media, mediaPath }) {
 
       <Dialog open={zoomed} onOpenChange={setZoomed}>
         <DialogContent className="max-w-6xl p-0 bg-transparent border-none shadow-none">
+          <DialogTitle/>
           <img
             src={current?.src}
             alt=""
