@@ -19,7 +19,7 @@ import automated_gear_3 from "@/assets/projects/automated_gear/Screenshot_3.png"
 export const experiences = [
   {
     company: "PT Iotera Sinergi Digital",
-    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
+    companyWeb: "https://www.linkedin.com/company/iotera/about/",
     role: "Full Stack Developer",
     date: "Feb 2025 – present",
     bulletPoints: [
@@ -36,7 +36,7 @@ export const experiences = [
   },
   {
     company: "CV Pilarmedia Indonesia (Software House)",
-    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
+    companyWeb: "https://www.linkedin.com/company/pilar-media/about/",
     role: "Full Stack Developer",
     date: "Sept 2024 – Nov 2024",
     bulletPoints: [
@@ -50,7 +50,7 @@ export const experiences = [
   },
   {
     company: "PT Behaestex (Textile Manufacture)",
-    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
+    companyWeb: "https://www.linkedin.com/company/pt-behaestex/about/",
     role: "Full Stack Web Developer",
     date: "Jan 2024 – Aug 2024",
     bulletPoints: [
@@ -63,7 +63,7 @@ export const experiences = [
   },
   {
     company: "Dentech Corp ID (Education Technology)",
-    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
+    companyWeb: "https://www.linkedin.com/company/dentech-corporation-id/about/",
     role: "STM32 Guest Speaker",
     date: "Sept 2023 – March 2024",
     bulletPoints: [
@@ -90,7 +90,7 @@ export const experiences = [
   },
   {
     company: "PT VKTR Mobilitas (Transportation System Electrification)",
-    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
+    companyWeb: "https://www.linkedin.com/company/vktrindonesia/about/",
     role: "Navigation Systems Researcher",
     date: "Aug 2022 - Feb 2023",
     bulletPoints: [
@@ -104,7 +104,7 @@ export const experiences = [
   },
   {
     company: "PT Graha Sarana Duta (Telkom Property)",
-    companyWeb: "https://www.linkedin.com/company/clown-technology/about/",
+    companyWeb: "https://www.linkedin.com/company/telkomproperty/about/",
     role: "Internship - Full Stack Web Developer",
     date: "Jan 2022 - Apr 2022",
     bulletPoints: [

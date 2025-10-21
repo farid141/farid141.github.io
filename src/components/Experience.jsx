@@ -16,21 +16,20 @@ export const Experience = () => {
               className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors duration-300 block"
             >
               <div className="flex justify-between items-start mb-4">
-                <div className="flex gap-2 items-center">
+                <a
+                  href={exp.companyWeb}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-2 items-center"
+                >
                   <img src={exp.image} alt="" className="size-12 rounded-lg" />
                   <div>
-                    <a
-                      href={exp.companyWeb}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <h3 className="text-xl font-semibold text-card-foreground">
-                        {exp.company}
-                      </h3>
-                      <p className="text-primary">{exp.role}</p>
-                    </a>
+                    <h3 className="text-xl font-semibold text-card-foreground">
+                      {exp.company}
+                    </h3>
+                    <p className="text-primary">{exp.role}</p>
                   </div>
-                </div>
+                </a>
                 <div className="flex items-center text-muted-foreground">
                   <Calendar size={16} className="mr-2" />
                   {exp.date}
