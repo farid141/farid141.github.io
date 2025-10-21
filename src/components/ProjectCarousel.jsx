@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { extractYoutubeId, getProjectMedia } from "@/utils";
 import { Dialog, DialogContent, DialogTitle } from "./ui/dialog";
+import MagnifyImage from "./MagnifyImage";
 
 export default function ProjectCarousel({ media, mediaPath }) {
   const [index, setIndex] = useState(0);
@@ -21,10 +22,7 @@ export default function ProjectCarousel({ media, mediaPath }) {
   return (
     <div className="relative h-96 bg-black flex items-center justify-center">
       {current?.type === "image" && (
-        <img
-          src={current?.src}
-          alt=""
-          className="object-contain h-full w-full cursor-zoom-in"
+        <MagnifyImage src={current?.src}
           onClick={() => setZoomed(true)}
         />
       )}
