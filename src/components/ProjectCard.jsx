@@ -1,9 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ProjectCard({ project, onClick }) {
-  const thumbnail = project.media[0]
+  const thumbnail = project.media[0].type === 'youtube'
     ? `https://img.youtube.com/vi/${project.media[0].src}/maxresdefault.jpg`
-    : "";
+    : project.media[0].src;
   return (
     <Card
       onClick={onClick}

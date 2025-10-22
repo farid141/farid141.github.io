@@ -16,6 +16,8 @@ import automated_gear_1 from "@/assets/projects/automated_gear/Screenshot_1.png"
 import automated_gear_2 from "@/assets/projects/automated_gear/Screenshot_2.png";
 import automated_gear_3 from "@/assets/projects/automated_gear/Screenshot_3.png";
 
+import voltage_unbalance from "@/assets/projects/3phase_voltage_unbalance/debugging.jpg";
+
 export const experiences = [
   {
     company: "PT Iotera Sinergi Digital",
@@ -244,7 +246,9 @@ export const projects = {
         When the unbalance exceeds a predefined threshold, an SMS alert is sent containing VRMS values, unbalance ratio, and GPS coordinates via a GSM module.`,
       tech: "c, stm32.jpg, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
-      media: [],
+      media: [
+        { type: "image", src: voltage_unbalance },
+      ],
       mediaPath: "/3_phase",
     },
   ],
