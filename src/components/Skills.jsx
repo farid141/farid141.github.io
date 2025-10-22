@@ -1,7 +1,7 @@
 import React from "react";
 import { SectionTitle } from "./common/SectionTitle";
-import { Tag } from "./common/Tag";
 import { skillCategories } from "../content";
+import { Logo } from "./Logo";
 
 export const Skills = () => {
   return (
@@ -21,7 +21,7 @@ export const Skills = () => {
               </h3>
               <div className="flex flex-wrap gap-2 align-center">
                 {skills.map((tech, i) => (
-                  <i class={`ci ci-${tech} ci-2x`} title={tech} />
+                  <Logo src={tech} key={i}/>
                 ))}
               </div>
             </div>

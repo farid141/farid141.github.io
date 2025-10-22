@@ -1,8 +1,8 @@
 import React from "react";
 import { Calendar } from "lucide-react";
 import { SectionTitle } from "./common/SectionTitle";
-import { Tag } from "./common/Tag";
 import { experiences } from "../content";
+import { Logo } from "./Logo";
 
 export const Experience = () => {
   return (
@@ -46,7 +46,7 @@ export const Experience = () => {
               <div className="flex flex-wrap gap-2 align-center">
                 <span className="font-bold self-center">Tech Stack</span>
                 {exp.tech.split(", ").map((tech, i) => (
-                  <i class={`ci ci-${tech} ci-2x`} title={tech} />
+                  <Logo src={tech} key={i}/>
                 ))}
               </div>
             </div>

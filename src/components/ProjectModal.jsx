@@ -1,5 +1,6 @@
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ProjectCarousel from "./ProjectCarousel";
+import { Logo } from "./Logo";
 
 export default function ProjectModal({ project, onClose }) {
   return (
@@ -21,7 +22,7 @@ export default function ProjectModal({ project, onClose }) {
               <div className="flex flex-wrap gap-2 align-center">
                 <span className="font-bold self-center">Tech Stack</span>
                 {project.tech.split(", ").map((tech, i) => (
-                  <i class={`ci ci-${tech} ci-2x`} title={tech} />
+                  <Logo src={tech} key={i}/>
                 ))}
               </div>
             </p>

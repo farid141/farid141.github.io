@@ -45,7 +45,7 @@ export const experiences = [
       "Integrate Firebase Cloud Messaging (FCM) OAuth2 API with laravel app to send mobile push notification.",
       "Provide API to mobile dev for Warehouse Management System (WMS) apps.",
     ],
-    tech: "laravel, mysql, angular, vuejs, bootstrap, jquery",
+    tech: "laravel, mysql, angularjs.png, vuejs, bootstrap, jquery",
     image: pilarmedia_logo,
   },
   {
@@ -71,7 +71,7 @@ export const experiences = [
       "Demonstrated practical examples with real device in live during the event.",
       "Offered insights and hands-on experience about embedded system to participants.",
     ],
-    tech: "cpp, c, arduino, powerpoint",
+    tech: "cpp, c, arduino, stm32.jpg",
     image: dentech_logo,
   },
   {
@@ -85,7 +85,7 @@ export const experiences = [
       "Collaborated with mechanical and electrical engineers for system integration process.",
       "Provided post-project, ensuring client’s comprehensive understanding and satisfaction with deliverables.",
     ],
-    tech: "cpp, c, python, arduino, linux, google, GCP, Eagle PCB",
+    tech: "cpp, c, python, arduino, esp32.png, stm32.jpg, linux, google, GCP, Eagle PCB",
     image: clown_logo,
   },
   {
@@ -134,11 +134,11 @@ export const skillCategories = {
     "jquery",
     "reactjs",
     "vuejs",
-    "angularjs",
-    "inertiajs",
+    "angularjs.png",
+    "inertiajs.png",
   ],
   Tools: ["vscode", "visualstudio", "git", "docker", "dbeaver", "postman"],
-  IoT: ["arduino", "stm32ide", "eagle"],
+  IoT: ["arduino", "esp32.png", "stm32.jpg", "stm32ide", "eagle"],
   Databases: ["mysql", "postgresql", "oracle", "sqlite", "mongodb", "redis"],
 };
 
@@ -166,7 +166,7 @@ export const projects = {
       description: `I enhanced my full-stack development skills through this project by implementing various model relationships 
         (hasManyThrough, morphMany, oneToMany, manyToMany, etc.) and integrating Laravel Breeze Authentication with Vue.js and Inertia. 
         Users can create and edit tasks, each containing multiple users with assigned roles, as well as multiple subtasks with tags.`,
-      tech: "laravel, vuejs, tailwindcss, inertiajs",
+      tech: "laravel, vuejs, tailwindcss, inertiajs.png",
       link: "https://github.com/farid141/todo-app-laravel-vue-inertia",
       media: [{ type: "youtube", src: "9p2p_zbVtKY" }],
       mediaPath: "/todo_apps",
@@ -242,7 +242,7 @@ export const projects = {
       description: `The main controller collects and displays voltage data from three sensors, one for each phase, and calculates VRMS values from analog readings. 
         It then computes the voltage unbalance percentage across the three phases. 
         When the unbalance exceeds a predefined threshold, an SMS alert is sent containing VRMS values, unbalance ratio, and GPS coordinates via a GSM module.`,
-      tech: "c, STM32 Cortex-M4, sensors, actuators",
+      tech: "c, stm32.jpg, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
       media: [],
       mediaPath: "/3_phase",
