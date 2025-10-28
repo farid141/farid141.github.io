@@ -26,7 +26,11 @@ export const Navbar = ({ activeSection }) => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <span className="text-xl font-bold text-primary">FN</span>
+          <span className="text-xl font-bold text-primary">
+            <a href='#home'>
+            FN
+            </a>
+          </span>
           <div className="hidden md:flex space-x-4">
             {['home', 'experience', 'projects', 'skills', 'education'].map((section) => (
               <NavLink key={section} section={section} />
