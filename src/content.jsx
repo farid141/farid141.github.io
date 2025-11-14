@@ -16,6 +16,9 @@ import automated_gear_1 from "@/assets/projects/automated_gear/Screenshot_1.png"
 import automated_gear_2 from "@/assets/projects/automated_gear/Screenshot_2.png";
 import automated_gear_3 from "@/assets/projects/automated_gear/Screenshot_3.png";
 
+import news_feed_1 from "@/assets/projects/news_feed/1.png";
+import news_feed_2 from "@/assets/projects/news_feed/2.png";
+
 import voltage_unbalance from "@/assets/projects/3phase_voltage_unbalance/debugging.jpg";
 
 export const experiences = [
@@ -146,6 +149,22 @@ export const skillCategories = {
 
 export const projects = {
   web_dev: [
+    {
+      title: "News Feed App Golang Repository Pattern",
+      description: `A news feed app with typical social media functionality such follow/unfollow user and create post. 
+        I am using JWT HTTP-Cookie authentication method to simplify front-end integration.
+        The success login response will set client cookie with JWT value. It also include infinite-scroll, 
+        after reaching last post it will load next post to user screen.  
+        I also try to make BE code clean by implementing Service-Repository Pattern using Google Wire to separate I/O, business logic and database query.`,
+      tech: "golang, nextjs, reactjs, tailwindcss, fiber",
+      link: "https://github.com/farid141/BE-NewsFeed",
+      media: [
+        { type: "youtube", src: "mfkrV41NCCk" },
+        { type: "image", src: news_feed_1 },
+        { type: "image", src: news_feed_2 },
+      ],
+      mediaPath: "/product_transactions",
+    },
     {
       title: "Laravel Product Transaction API with Queued Email Notification",
       description: `This application provides CRUD APIs for products and transactions. 

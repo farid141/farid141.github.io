@@ -15,9 +15,9 @@ import { projects } from "@/content";
 
 export default function ProjectTabs() {
   const [selectedProject, setSelectedProject] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("iot");
+  const [selectedCategory, setSelectedCategory] = useState("web_dev");
 
-  const categories = ["iot", "web_dev", "web_scrap"];
+  const categories = ["web_dev", "iot", "web_scrap"];
   
   const categoryLabels = {
     iot: "IoT Projects",
