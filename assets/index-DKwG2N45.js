@@ -166,7 +166,7 @@ Error generating stack: `+u.message+`
         I am using JWT HTTP-Cookie authentication method to simplify front-end integration.
         The success login response will set client cookie with JWT value. It also include infinite-scroll, 
         after reaching last post it will load next post to user screen.  
-        I also try to make BE code clean by implementing Service-Repository Pattern using Google Wire to separate I/O, business logic and database query.`,tech:"golang, nextjs, reactjs, tailwindcss, fiber",link:"",media:[{type:"youtube",src:"mfkrV41NCCk"},{type:"image",src:zS},{type:"image",src:FS}],mediaPath:"/product_transactions"},{title:"Laravel Product Transaction API with Queued Email Notification",description:`This application provides CRUD APIs for products and transactions. 
+        I also try to make BE code clean by implementing Service-Repository Pattern using Google Wire to separate I/O, business logic and database query.`,tech:"golang, nextjs, reactjs, tailwindcss, fiber",link:"https://github.com/farid141/BE-NewsFeed",media:[{type:"youtube",src:"mfkrV41NCCk"},{type:"image",src:zS},{type:"image",src:FS}],mediaPath:"/product_transactions"},{title:"Laravel Product Transaction API with Queued Email Notification",description:`This application provides CRUD APIs for products and transactions. 
         Each product includes details such as price, stock, and images. 
         Transactions can contain multiple products with quantities and customer information. 
         After a transaction is successfully created, an email notification job is dispatched to a queue to prevent blocking the response process. 
