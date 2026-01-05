@@ -1,9 +1,20 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ProjectCard({ project, onClick }) {
-  const thumbnail = project.media[0].type === 'youtube'
-    ? `https://img.youtube.com/vi/${project.media[0].src}/maxresdefault.jpg`
-    : project.media[0].src;
+  let thumbnail;
+  switch (project.media[0].type) {
+    case 'gdrive':
+      thumbnail = `https://drive.google.com/thumbnail?id=${project.media[0].src}&sz=w640`;
+      break;
+    case 'youtube':
+      thumbnail = `https://img.youtube.com/vi/${project.media[0].src}/maxresdefault.jpg`;
+      break;
+  
+    default:
+      thumbnail = project.media[0].src;
+      break;
+  }
+  
   return (
     <Card
       onClick={onClick}

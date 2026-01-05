@@ -44,6 +44,15 @@ export default function ProjectCarousel({ media, mediaPath }) {
           allowFullScreen
         ></iframe>
       )}
+      {current?.type === "gdrive" && (
+        <iframe
+          className="w-full h-full"
+          src={`https://drive.google.com/file/d/${current?.src}/preview`}
+          title="GoogleDrive video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      )}
 
       <Button
         onClick={prev}

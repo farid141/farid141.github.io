@@ -138,6 +138,7 @@ export const skillCategories = {
     "tailwindcss",
     "jquery",
     "reactjs",
+    "antdesign",
     "vuejs",
     "angularjs.png",
     "inertiajs.png",
@@ -149,6 +150,18 @@ export const skillCategories = {
 
 export const projects = {
   web_dev: [
+    {
+      title: "Pegadaian Collateral Safekeeping System",
+      description: `Web app for collateral system flow in pegadaian. 
+      The flow consisting of multi step process limited by user role.
+      It also integrated with IoT devices such face recognition, door lock and RFID scanner`,
+      tech: "fastapi, reactjs, antdesign, postgresql",
+      link: null,
+      media: [
+        { type: "gdrive", src: "1O4dYUfWkgMEh206eaLVE-uCEr9qet-o_" },
+      ],
+      mediaPath: "/product_transactions",
+    },
     {
       title: "News Feed App Golang Repository Pattern",
       description: `A news feed app with typical social media functionality such follow/unfollow user and create post. 
