@@ -132,7 +132,7 @@ export const skillCategories = {
     "typescript",
     "sql",
   ],
-  Backend: ["laravel", "codeigniter", "fastapi", "nodejs"],
+  Backend: ["laravel", "codeigniter", "fastapi", "nodejs", "golang"],
   FrontEnd: [
     "bootstrap",
     "tailwindcss",
@@ -155,10 +155,12 @@ export const projects = {
       description: `Web app for collateral system flow in pegadaian. 
       The flow consisting of multi step process limited by user role.
       It also integrated with IoT devices such face recognition, door lock and RFID scanner`,
-      tech: "fastapi, reactjs, antdesign, postgresql",
+      tech: "fastapi, reactjs, antdesign, postgresql, flutter",
       link: null,
       media: [
         { type: "gdrive", src: "1O4dYUfWkgMEh206eaLVE-uCEr9qet-o_" },
+        { type: "gdrive", src: "1u8OEn4bPauatT8EAhga6SfEO0Jb3tOZO" },
+        { type: "gdrive", src: "1eXWiwj1qXmItUSd7wSHMzBaiy3c1Jbct" },
       ],
       mediaPath: "/product_transactions",
     },
