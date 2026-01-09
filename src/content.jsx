@@ -159,8 +159,8 @@ export const projects = {
       link: null,
       media: [
         { type: "gdrive", src: "1O4dYUfWkgMEh206eaLVE-uCEr9qet-o_" },
-        { type: "gdrive", src: "1u8OEn4bPauatT8EAhga6SfEO0Jb3tOZO" },
-        { type: "gdrive", src: "1eXWiwj1qXmItUSd7wSHMzBaiy3c1Jbct" },
+        { type: "gdrive", src: "1Pv5JrMgHD1461m5A68EtuSAYUHh9xHpO" },
+        { type: "gdrive", src: "1OpRfWSmjk5gj0JwRRfdUbc9lypXjTG5_" },
       ],
       mediaPath: "/product_transactions",
     },
