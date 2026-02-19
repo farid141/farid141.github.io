@@ -151,8 +151,19 @@ export const skillCategories = {
 export const projects = {
   web_dev: [
     {
+      title: "BSI SmartVault Inventory Management System",
+      description: `Web app for Gold Inventory Management System in pegadaian. 
+      It has features such as visitor to SmartVault, Linking, Stocking, Unstocking, Unlinking, StockOpname, etc.
+      It also integrated with IoT devices such face recognition, metalgate, smart scale, door lock and RFID scanner`,
+      tech: "fastapi, reactjs, antdesign, oracle",
+      link: null,
+      media: [
+        { type: "gdrive", src: "1jNe5xtUfJEhXJNOERFNLOlGSBRsU8btT" },
+      ],
+    },
+    {
       title: "Pegadaian Collateral Safekeeping System",
-      description: `Web app for collateral system flow in pegadaian. 
+      description: `Web and mobile app for collateral system flow in pegadaian. 
       The flow consisting of multi step process limited by user role.
       It also integrated with IoT devices such face recognition, door lock and RFID scanner`,
       tech: "fastapi, reactjs, antdesign, postgresql, flutter",
@@ -162,7 +173,6 @@ export const projects = {
         { type: "gdrive", src: "1Pv5JrMgHD1461m5A68EtuSAYUHh9xHpO" },
         { type: "gdrive", src: "1OpRfWSmjk5gj0JwRRfdUbc9lypXjTG5_" },
       ],
-      mediaPath: "/product_transactions",
     },
     {
       title: "News Feed App Golang Repository Pattern",
@@ -178,7 +188,6 @@ export const projects = {
         { type: "image", src: news_feed_1 },
         { type: "image", src: news_feed_2 },
       ],
-      mediaPath: "/product_transactions",
     },
     {
       title: "Laravel Product Transaction API with Queued Email Notification",
@@ -195,7 +204,6 @@ export const projects = {
         { type: "image", src: product_transactions_2 },
         { type: "image", src: product_transactions_3 },
       ],
-      mediaPath: "/product_transactions",
     },
     {
       title: "Laravel Todo App",
@@ -205,7 +213,6 @@ export const projects = {
       tech: "laravel, vuejs, tailwindcss, inertiajs.png",
       link: "https://github.com/farid141/todo-app-laravel-vue-inertia",
       media: [{ type: "youtube", src: "9p2p_zbVtKY" }],
-      mediaPath: "/todo_apps",
     },
     {
       title: "React Product Cart",
@@ -214,7 +221,6 @@ export const projects = {
       tech: "react, redux, firebase",
       link: "https://github.com/farid141/react-redux-firebase",
       media: [{ type: "youtube", src: "6wsEmp4Np94" }],
-      mediaPath: "/product_cart",
     },
     {
       title: "Admin Panel with Dynamic Menu and Permission",
@@ -224,7 +230,6 @@ export const projects = {
       tech: "laravel, mysql, jquery, bootstrap",
       link: null,
       media: [{ type: "youtube", src: "E8kqYNTjM3Y" }],
-      mediaPath: "/admin_panel",
     },
   ],
   iot: [
@@ -242,7 +247,6 @@ export const projects = {
         { type: "image", src: automated_gear_2 },
         { type: "image", src: automated_gear_3 },
       ],
-      mediaPath: "/automated_gear",
     },
     {
       title: "Hybrid Power Management System",
@@ -271,7 +275,6 @@ export const projects = {
       tech: "c, arduino, sensors, actuators",
       link: "https://github.com/farid141/3-Phase-Voltage-Unbalance-Alert-System",
       media: [{ type: "youtube", src: "vYOIzDr80R0" }],
-      mediaPath: "/hybrid_power",
     },
     {
       title: "3-Phase Voltage Unbalance Alert System",
@@ -283,7 +286,6 @@ export const projects = {
       media: [
         { type: "image", src: voltage_unbalance },
       ],
-      mediaPath: "/3_phase",
     },
   ],
   web_scrap: [
@@ -294,7 +296,6 @@ export const projects = {
       tech: "python, selenium, pandas",
       link: "https://github.com/farid141/jobstreet-scrapper",
       media: [{ type: "youtube", src: "q32RDOZiAWk" }],
-      mediaPath: "/jobstreet_scrapper",
     },
   ],
 };

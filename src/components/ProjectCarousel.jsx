@@ -5,14 +5,9 @@ import { extractYoutubeId, getProjectMedia } from "@/utils";
 import { Dialog, DialogContent, DialogTitle } from "./ui/dialog";
 import MagnifyImage from "./MagnifyImage";
 
-export default function ProjectCarousel({ media, mediaPath }) {
+export default function ProjectCarousel({ media }) {
   const [index, setIndex] = useState(0);
   const [zoomed, setZoomed] = useState(false);
-
-  // if (mediaPath) {
-  //   const imgMedia = getProjectMedia(mediaPath);
-  //   media = media.concat(imgMedia);
-  // }
 
   const next = () => setIndex((index + 1) % media.length);
   const prev = () => setIndex((index - 1 + media.length) % media.length);

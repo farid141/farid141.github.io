@@ -9,7 +9,6 @@ export default function ProjectModal({ project, onClose }) {
         <div className="grid md:grid-cols-2">
           <ProjectCarousel
             media={project.media}
-            mediaPath={project.mediaPath}
           />
           <div className="p-6">
             <h3 className="text-2xl font-semibold mb-2 text-foreground">
