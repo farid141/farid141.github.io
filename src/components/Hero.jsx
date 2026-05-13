@@ -26,9 +26,11 @@ export const Hero = () => {
               Full Stack Developer & IoT Engineer
             </h2>
             <p className="text-xl mb-8 text-muted-foreground">
-              Computer Engineering graduate with 3+ years of experience in
-              software engineering and IoT development. Passionate about technical
-              programming, especially DSA.
+              Results-driven Software Engineer with 3+ years of experience in
+              Full-stack development and IoT. Proven in building scalable
+              enterprise systems and optimizing backend performance, with a strong
+              focus on clean, maintainable code. A lifelong learner committed to
+              delivering high-impact and future-proof technology solutions.
             </p>
             <div className="flex gap-6">
               <a
