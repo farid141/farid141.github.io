@@ -19,7 +19,7 @@ function App() {
         <Skills />
         <Education />
         <a 
-          href="https://drive.google.com/file/d/1CvIfpaLNZ_xG3ohwHTWmUm-taIodDAgV/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1vxcCEm-IyYkzAg9NCcJLPHS7yuZux6EU/view?usp=sharing" 
           target="_blank"
           className="fixed bottom-6 right-6 z-50 shadow-lg flex gap-2 bg-primary text-primary-foreground p-5 rounded-full"
         >

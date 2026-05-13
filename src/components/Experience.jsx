@@ -3,6 +3,7 @@ import { Calendar } from "lucide-react";
 import { SectionTitle } from "./common/SectionTitle";
 import { experiences } from "../content";
 import { Logo } from "./Logo";
+import FadeUpSection from "./animations/FadeUpSections";
 
 export const Experience = () => {
   return (
@@ -11,45 +12,47 @@ export const Experience = () => {
         <SectionTitle>Experience</SectionTitle>
         <div className="max-w-4xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors duration-300 block"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <a
-                  href={exp.companyWeb}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex gap-2 items-center"
-                >
-                  <img src={exp.image} alt="" className="size-12 rounded-lg" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-card-foreground">
-                      {exp.company}
-                    </h3>
-                    <p className="text-primary">{exp.role}</p>
+            <FadeUpSection>
+              <div
+                key={index}
+                className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors duration-300"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <a
+                    href={exp.companyWeb}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-2 items-center"
+                  >
+                    <img src={exp.image} alt="" className="size-12 rounded-lg" />
+                    <div>
+                      <h3 className="text-xl font-semibold text-card-foreground">
+                        {exp.company}
+                      </h3>
+                      <p className="text-primary">{exp.role}</p>
+                    </div>
+                  </a>
+                  <div className="flex items-center text-muted-foreground">
+                    <Calendar size={16} className="mr-2" />
+                    {exp.date}
                   </div>
-                </a>
-                <div className="flex items-center text-muted-foreground">
-                  <Calendar size={16} className="mr-2" />
-                  {exp.date}
+                </div>
+                <div>
+                  <p className="text-card-foreground mb-4">{exp.description}</p>
+                  <ul className="text-card-foreground mb-4 list-disc list-inside">
+                    {exp.bulletPoints.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-wrap gap-2 align-center">
+                  <span className="font-bold self-center">Tech Stack</span>
+                  {exp.tech.split(", ").map((tech, i) => (
+                    <Logo src={tech} key={i}/>
+                  ))}
                 </div>
               </div>
-              <div>
-                <p className="text-card-foreground mb-4">{exp.description}</p>
-                <ul className="text-card-foreground mb-4 list-disc list-inside">
-                  {exp.bulletPoints.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="flex flex-wrap gap-2 align-center">
-                <span className="font-bold self-center">Tech Stack</span>
-                {exp.tech.split(", ").map((tech, i) => (
-                  <Logo src={tech} key={i}/>
-                ))}
-              </div>
-            </div>
+            </FadeUpSection>
           ))}
         </div>
       </div>

@@ -12,6 +12,8 @@ import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import { projects } from "@/content";
+import FadeUpSection from "./animations/FadeUpSections";
+import FadeUpTabSection from "./animations/FadeUpTabSections";
 
 export default function ProjectTabs() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -64,17 +66,19 @@ export default function ProjectTabs() {
           </TabsList>
 
           {categories.map((cat) => (
-            <TabsContent key={cat} value={cat}>
-              <div className="grid md:grid-cols-3 gap-6 mt-6">
-                {projects[cat].map((p, i) => (
-                  <ProjectCard
-                    key={i}
-                    project={p}
-                    onClick={() => setSelectedProject(p)}
-                  />
-                ))}
-              </div>
-            </TabsContent>
+            <FadeUpTabSection animKey={selectedCategory}>
+              <TabsContent key={cat} value={cat}>
+                <div className="grid md:grid-cols-3 gap-6 mt-6">
+                  {projects[cat].map((p, i) => (
+                    <ProjectCard
+                      key={i}
+                      project={p}
+                      onClick={() => setSelectedProject(p)}
+                    />
+                  ))}
+                </div>
+              </TabsContent>
+            </FadeUpTabSection>
           ))}
         </Tabs>
 
